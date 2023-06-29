@@ -1,14 +1,4 @@
-/**
-* Template Name: Techie
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -43,7 +33,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5846f9;
+  background: #7A3E3E;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -57,7 +47,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #7b27d8;
+  background: #47A992;
   color: #fff;
 }
 
@@ -123,7 +113,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(24, 6, 185, 0.8);
+  background: #7A3E3E;
   padding: 12px 0;
 }
 
@@ -428,7 +418,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/bg.jpeg") center center no-repeat;
+  background: linear-gradient(45deg, rgba(105, 72, 45, 0.9) 0%, rgba(109, 205, 61, 0.9) 100%), url("../img/bg.jpeg") center center no-repeat;
   background-size: cover;
 }
 
@@ -467,7 +457,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #5846f9;
+  color: #482121;
 }
 
 #hero .animated {
@@ -666,6 +656,14 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.btn-pesan {
+  background-color: #47A992;
+  border-radius: 10px;
+  border-color: #7A3E3E;
+  font-family: "Poppins", sans-serif;
+  color: #EEEEEE;
+}
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -1491,8 +1489,9 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg, #7A3E3E 0%, #47A992 150%);
   background-size: cover;
+  align-items: center;
 }
 
 #footer .footer-top {
@@ -1501,6 +1500,7 @@ section {
 }
 
 #footer .footer-top .footer-contact {
+  align-items: center;
   margin-bottom: 30px;
 }
 
