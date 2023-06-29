@@ -19,8 +19,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('auth/login');
 // });
 
-Route::controller(LoginController::class)->group(function(){
-    Route::get('/', 'login')->name('login');
+// Route::controller(LoginController::class)->group(function(){
+//     Route::get('/', 'login')->name('login');
+// });
+
+Route::get('/', function() {
+    return view('user/index');
 });
 
 Route::controller(RegisterController::class)->group(function(){
