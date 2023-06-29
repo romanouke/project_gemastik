@@ -32,16 +32,17 @@ body {
     </div>
     <div class="text-center mt-4 name">
     </div>
-    <form class="p-3 mt-3">
+    <form class="p-3 mt-3" action="{{ route('login.post') }}" method="POST">
+        @csrf
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
-            <input type="text" name="userName" id="userName" placeholder="Username">
+            <input type="text" name="username" id="username" placeholder="Username">
         </div>
         <div class="form-field d-flex align-items-center">
             <span class="fas fa-key"></span>
-            <input type="password" name="password" id="pwd" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password">
         </div>
-        <button class="btn mt-3">Masuk</button>
+        <input type="submit" name="submit" class="btn mt-3" value="Login">
     </form>
     <br>
     <div class="text-center fs-6">

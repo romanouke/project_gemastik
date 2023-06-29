@@ -9,19 +9,19 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link href="assets/img/logo.png" rel="icon">
-    <link href="assets/img/logo.png" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/logo.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon">
 
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo"><a href="#">
-                    <img src="{{ asset('assets/img/logo.png') }}" rel="logo">
+                    <img src="{{ asset('assets/img/logo.png') }}">
                 </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -40,6 +40,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
                     <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
                     <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('logout') }}">LogOut</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -59,7 +60,7 @@
                     <div><a href="#services" class="btn-get-started scrollto">Layanan</a></div>
                 </div>
                 <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-                    <img src="assets/img/logo.png" class="img-fluid animated" alt="">
+                    <img src="{{ asset('assets/img/logo.png') }}" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
@@ -253,15 +254,15 @@
                 class="bi bi-arrow-up-short"></i></a>
         <div id="preloader"></div>
 
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+        <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 
-        <script src="assets/js/main.js"></script>
+        <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 

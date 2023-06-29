@@ -16,17 +16,18 @@
          <img src="{{ asset('assets/img/logo.png') }}" alt="logo" style="width:350px; height:350px;">
       </div>
       <div class="col-md-6 ">
-         <form id="form_login" role="form" method="post" action="config_regis.php">
+         <form id="form_login" role="form" action="{{ route('register.post') }}" method="POST">
+            @csrf
             <div class="d-flex">
                <div class="aa">
                   <div class="field">
-                     <input type="text" name="nama_cus" id="nama_customer" required>
+                     <input type="text" name="nama" id="nama" required>
                      <label>Nama Lengkap</label>
                     </div>
                     <div class="field" placeholder="Sebagai">
                         <select id="role" name="role">
-                        <option value="Customer">Customer</option>
-                        <option value="Porter">Porter</option>
+                           <option value="Customer">Customer</option>
+                           <option value="Porter">Porter</option>
                         </select>
                      </div>
                   <div class="field" placeholder="Jenis Kelamin">
@@ -42,21 +43,21 @@
                </div>
                <div class="bb">
                   <div class="field">
-                     <input type="number" name="no_hp" id="no_hp" pattern="08\d{10}" required>
+                     <input type="text" name="no_hp" id="no_hp" required>
                      <label>Nomor Handphone</label>
                   </div>
                   <div class="field">
-                     <input type="text" name="usrname" id="register_username" required>
+                     <input type="text" name="username" id="username" required>
                      <label>Username</label>
                   </div>
                   <div class="field">
-                     <input type="password" name="pwd" id="password" required>
+                     <input type="password" name="password" id="password" required>
                      <label>Password</label>
                   </div>
                </div>
             </div>
             <div class="field">
-               <input type="submit">
+               <input type="submit" name="submit" class="input-submit" value="Registerasi">
             </div>
             <div class="signup-link">
                Sudah punya akun? <a href="{{ route('login') }}">Masuk</a>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,14 +20,17 @@ use Illuminate\Support\Facades\Route;
 //     return view('auth/login');
 // });
 
-// Route::controller(LoginController::class)->group(function(){
-//     Route::get('/', 'login')->name('login');
-// });
-
-Route::get('/', function() {
-    return view('user/index');
+Route::group([], function () {
+    Route::get('', [LoginController::class, 'login'])->name('login');
+    Route::post('login', [LoginController::class, 'loginPost'])->name('login.post');
 });
 
-Route::controller(RegisterController::class)->group(function(){
-    Route::get('register', 'register')->name('register');
+Route::group([], function () {
+    Route::get('register', [RegisterController::class, 'register'])->name('register');
+    Route::post('register', [RegisterController::class, 'registerPost'])->name('register.post');
+});
+
+Route::middleware('auth')->group(function(){
+    Route::get('index', [PageController::class, 'index'])->name('index');
+    Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
