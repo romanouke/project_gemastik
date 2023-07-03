@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::group([], function () {
     Route::get('', [LoginController::class, 'login'])->name('login');
     Route::post('login', [LoginController::class, 'loginPost'])->name('login.post');
+<<<<<<< HEAD
 });
 
 Route::group([], function () {
@@ -34,3 +35,18 @@ Route::middleware('auth')->group(function(){
     Route::get('index', [PageController::class, 'index'])->name('index');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
+=======
+});
+
+Route::group([], function () {
+    Route::get('register', [RegisterController::class, 'register'])->name('register');
+    Route::post('register', [RegisterController::class, 'registerPost'])->name('register.post');
+});
+
+Route::middleware('auth')->group(function(){
+    Route::get('index', [PageController::class, 'index'])->name('index');
+    Route::get('services', [PageController::class, 'services'])->name('services');
+    Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+});
+
+>>>>>>> 1eb763f58304ec3482ee1a1f00cd1fdbe2bc2a4c
