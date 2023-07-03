@@ -268,5 +268,11 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
-
+  
 })()
+const detailsElements = document.getElementsByTagName('details');
+for (let i = 0; i < detailsElements.length; i++) {
+  detailsElements[i].addEventListener('click', function() {
+    this.open = !this.open;
+  });
+}

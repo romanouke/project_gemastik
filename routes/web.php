@@ -32,5 +32,7 @@ Route::group([], function () {
 
 Route::middleware('auth')->group(function(){
     Route::get('index', [PageController::class, 'index'])->name('index');
+    Route::get('services', [PageController::class, 'services'])->name('services');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
+
