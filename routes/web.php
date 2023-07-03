@@ -24,15 +24,12 @@ Route::group([], function () {
     Route::get('', [LoginController::class, 'login'])->name('login');
     Route::post('login', [LoginController::class, 'loginPost'])->name('login.post');
 });
-
 Route::group([], function () {
     Route::get('register', [RegisterController::class, 'register'])->name('register');
     Route::post('register', [RegisterController::class, 'registerPost'])->name('register.post');
 });
-
 Route::middleware('auth')->group(function(){
     Route::get('index', [PageController::class, 'index'])->name('index');
     Route::get('services', [PageController::class, 'services'])->name('services');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
-
