@@ -33,3 +33,7 @@ Route::middleware('auth')->group(function(){
     Route::get('services', [PageController::class, 'services'])->name('services');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 });
+
+Route::controller(PageController::class)->group(function(){
+    Route::get('porter', 'porter')->name('porter');
+});
