@@ -10,24 +10,24 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ asset('porter/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('porter/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('porterassets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('porterassets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('porter/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/quill/quill.snow.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/simple-datatables/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('porter/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -756,17 +756,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{{ asset('porter/vendor/apexcharts/apexcharts.min.js') }}"></script>
-  <script src="{{ asset('porter/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('porter/vendor/chart.js/chart.umd.js') }}"></script>
-  <script src="{{ asset('porter/vendor/echarts/echarts.min.js') }}"></script>
-  <script src="{{ asset('porter/vendor/quill/quill.min.js') }}"></script>
-  <script src="{{ asset('porter/vendor/simple-datatables/simple-datatables.js') }}"></script>
-  <script src="{{ asset('porter/vendor/tinymce/tinymce.min.js') }}"></script>
-  <script src="{{ asset('porter/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/chart.js/chart.umd.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/echarts/echarts.min.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/quill/quill.min.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/tinymce/tinymce.min.js') }}"></script>
+  <script src="{{ asset('porterassets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ asset('assets/js/main.js') }}"></script>
+  <script src="{{ asset('porterassets/js/main.js') }}"></script>
 
 </body>
 
