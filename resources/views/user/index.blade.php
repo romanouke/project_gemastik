@@ -39,8 +39,9 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
                     <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
+                    <li><a class="nav-link scrollto" href="#histori">Riwayat</a></li>
                     <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-                    <li><a class="nav-link scrollto" href="{{ route('logout') }}">LogOut</a></li>
+                    <li><a class="nav-link scrollto" href="{{ route('logout') }}">KELUAR</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -96,7 +97,29 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Services Section -->  
+        </section><!-- End Services Section -->
+
+        <!-- History Section -->
+        <section id="histori" class="histori">
+            <div class="container mt-5">
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th class="text-dark text">No.</th>
+                            <th class="text-dark text">Tanggal</th>
+                            <th class="text-dark text">Waktu Mulai</th>
+                            <th class="text-dark text">Waktu Selesai</th>
+                            <th class="text-dark text">Metode Pembayaran</th>
+                            <th class="text-dark text">Harga/Menit</th>
+                            <th class="text-dark text">Harga</th>
+                            <th class="text-dark text">Status</th>
+                            <th class="text-dark text">Denda</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container">
@@ -152,6 +175,7 @@
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Riwayat</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang</a></li>
                             </ul>
                         </div>
