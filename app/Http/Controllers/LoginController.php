@@ -10,9 +10,13 @@ class LoginController extends Controller
 {
     public function login(){
         if(Auth::check()){
-            return redirect()->route('index');
+            if(Auth::user()->role == 'Porter'){
+                return redirect()->route('porter');
+            }else{
+                return redirect()->route(('index'));
+            }
         }
-        return view('auth/login');        
+        return view('auth/login');
     }
 
     public function loginPost(Request $request){
@@ -25,13 +29,13 @@ class LoginController extends Controller
 
             return redirect()->route('login');
         }
-        return redirect()->route('')->with('error', 'password salah!');
+        return redirect()->route('login')->with('error', 'password salah!');
     }
     public function logout(Request $request){
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-        
+
         return redirect()->route('login');
     }
 }
