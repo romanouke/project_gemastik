@@ -69,6 +69,18 @@
                             <input type="text" class="form-control" id="edit-nama" name="edit-nama" value="">
                         </div>
                         <div class="form-group">
+                            <label for="edit-nim">Tanggal</label>
+                            <input type="text" class="form-control" id="edit-nim" name="edit-nim" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-nim">Harga</label>
+                            <input type="text" class="form-control" id="edit-nim" name="edit-nim" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-nim">Durasi</label>
+                            <input type="text" class="form-control" id="edit-nim" name="edit-nim" value="">
+                        </div>
+                        <div class="form-group">
                             <label for="edit-nim">Deskripsi Belanjaan</label>
                             <input type="text" class="form-control" id="edit-nim" name="edit-nim" value="">
                         </div>
