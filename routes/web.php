@@ -37,7 +37,7 @@ Route::middleware('auth')->group(function(){
     //Sebagai Customer
     Route::middleware('role:Customer')->group(function(){
         Route::get('index', [PageController::class, 'index'])->name('index');
-        Route::get('services', [LoginController::class, 'services'])->name('services');
+        Route::get('services', [PageController::class, 'services'])->name('services');
     });
 
     //Sebagai Porter
