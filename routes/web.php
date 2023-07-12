@@ -43,5 +43,6 @@ Route::middleware('auth')->group(function(){
     //Sebagai Porter
     Route::middleware('role:Porter')->group(function(){
         Route::get('porter', [PageController::class, 'porter'])->name('porter');
+        Route::get('user' , [PageController::class, 'userporter'])->name('userporter');
     });
 });
