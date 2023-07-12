@@ -18,16 +18,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('porter/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/quill/quill.snow.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-  <link href="{{ asset('porter/vendor/simple-datatables/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('porter/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('porterassets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -211,14 +211,14 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/userprofile-img.jpeg" alt="Profile" class="rounded-circle">
-            <span id="Judulmu" class="d-none d-md-block dropdown-toggle ps-2">Owen Kalumata</span>
+            <img src="{{ asset('porterassets/img/userprofile-img.jpeg') }}" alt="Profile" class="rounded-circle">
+            <span id="Judulmu" class="d-none d-md-block dropdown-toggle ps-2" style="color:black;">Owen Kalumata</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>Erick Owen Indri Kalumata</h6>
-              <span>Web Development</span>
+              <span>Porter</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -280,7 +280,6 @@
           <span id="Judulmu">Beranda</span>
         </a>
       </li><!-- End Dashboard Nav -->
-      <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
         <a  class="nav-link " href="{{ route('userporter') }}">
@@ -313,9 +312,9 @@
           <div class="card">
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
-              <img src="assets/img/userprofile-img.jpeg" alt="Profile" class="rounded-circle">
+              <img src="{{ asset ('porterassets/img/userprofile-img.jpeg') }}" alt="Profile" class="rounded-circle">
               <h2>Erick Owen Indri Kalumata</h2>
-              <h3>Web Development</h3>
+              <h3>Porter</h3>
               <div class="social-links mt-2">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -343,10 +342,6 @@
                 </li>
 
                 <li class="nav-item">
-                  <button id="Judulmu" class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
-                </li>
-
-                <li class="nav-item">
                   <button id="Judulmu" class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
                 </li>
 
@@ -355,37 +350,32 @@
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
                   <h5 class="card-title">About</h5>
-                  <p class="small fst-italic">SANTAY DULU GA SEE.</p>
+                  <p class="small fst-italic">Saya adalah seorang pekerja kerja, jujur, dan berintegritas. Salah satu softskill saya adalah menggunakan bahasa inggris</p>
 
-                  <h5 class="card-title">Profile Details</h5>
+                  <h5 class="card-title">Detail Profil</h5>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-3 col-md-4 label ">Nama Lengkap</div>
                     <div class="col-lg-9 col-md-8">Erick Owen Indri Kalumata</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Company</div>
-                    <div class="col-lg-9 col-md-8">Universitas Sam Ratulangi</div>
+                    <div class="col-lg-3 col-md-4 label">Pekerjaan</div>
+                    <div class="col-lg-9 col-md-8">Porter</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Job</div>
-                    <div class="col-lg-9 col-md-8">Web Development</div>
+                    <div class="col-lg-3 col-md-4 label">Kota</div>
+                    <div class="col-lg-9 col-md-8">Minahasa Utara</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Country</div>
-                    <div class="col-lg-9 col-md-8">North Minahasa</div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-3 col-md-4 label">alamat</div>
                     <div class="col-lg-9 col-md-8">Manado</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-3 col-md-4 label">Nomor HP</div>
                     <div class="col-lg-9 col-md-8">085757151835</div>
                   </div>
 
