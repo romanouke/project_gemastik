@@ -236,7 +236,7 @@
     </li>
 
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+      <a class="dropdown-item d-flex align-items-center" href="#">
         <i class="bi bi-question-circle"></i>
         <span>Butuh bantuan?</span>
       </a>
@@ -246,7 +246,7 @@
     </li>
 
     <li>
-      <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}">
         <i class="bi bi-box-arrow-right"></i>
         <span>Keluar</span>
       </a>
@@ -266,7 +266,7 @@
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link " href="index.html">
+      <a class="nav-link " href="{{ route('porter') }}">
         <i class="bi bi-grid"></i>
         <span>Beranda</span>
       </a>
@@ -275,7 +275,7 @@
     <li class="nav-heading">Laman</li>
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="users-profile.html">
+      <a class="nav-link collapsed" href="{{ route('userporter') }}">
         <i class="bi bi-person"></i>
         <span>Profil</span>
       </a>
@@ -291,7 +291,7 @@
     <h1>Beranda</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('porter') }}">Beranda</a></li>
         <li class="breadcrumb-item active">Beranda</li>
       </ol>
     </nav>
@@ -330,7 +330,7 @@
                   </div>
                   <div class="ps-3">
                     <h6>145</h6>
-                    <span class="text-muted small pt-2 ps-1">Peningkatan</span> <span id="Judulkita" class="text-success small pt-1 fw-bold">12%</span> 
+                    <span class="text-muted small pt-2 ps-1">Peningkatan</span> <span id="Judulkita" class="text-success small pt-1 fw-bold">12%</span>
 
                   </div>
                 </div>
@@ -401,7 +401,7 @@
                   </div>
                   <div class="ps-3">
                     <h6>1244</h6>
-                    <span class="text-muted small pt-2 ps-1">Penurunan</span> <span class="text-danger small pt-1 fw-bold">12%</span> 
+                    <span class="text-muted small pt-2 ps-1">Penurunan</span> <span class="text-danger small pt-1 fw-bold">12%</span>
 
                   </div>
                 </div>

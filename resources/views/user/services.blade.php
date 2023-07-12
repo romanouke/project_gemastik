@@ -25,7 +25,10 @@
 </head>
 
 <body>
-
+    <div>
+    <h1 style="text-align: center; color:#7A3E3E">SILAHKAN MEMILIH PORTER</h1>
+    <button type="button" class="btn btn-primary" style="margin-left: 20px; margin-top:-90px">Kembali</button>
+    </div>
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
             <div class="col mb-5">
@@ -85,7 +88,7 @@
                             <input type="text" class="form-control" id="edit-nim" name="edit-nim" value="">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">Pesan</button>
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
                     </form>
                 </div>
             </div>
