@@ -16,4 +16,7 @@ class PageController extends Controller
     public function porter(){
         return view('porter/index');
     }
+    public function useporter(){
+        return view('porter/users-profile');
+    }
 }
