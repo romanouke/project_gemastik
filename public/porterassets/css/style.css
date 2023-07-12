@@ -25,6 +25,10 @@
   color:#7A3E3E;
 }
 
+#Judulkita {
+  color:dodgerblue;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #47A992;
@@ -249,7 +253,7 @@ h6 {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #47A992;
+  color: #7A3E3E;
   font-family: "Poppins", sans-serif;
 }
 
@@ -697,7 +701,7 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #47A992;
+  color: #7A3E3E;
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
@@ -707,11 +711,11 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #47A992;
+  color: #7A3E3E;
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #47A992;
+  color: #7A3E3E;
   background: #fff;
 }
 
@@ -720,12 +724,12 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #47A992;
+  color: #7A3E3E;
   background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #47A992;
+  color: #7A3E3E;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -748,7 +752,7 @@ h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #47A992;
+  color: #7A3E3E;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -763,11 +767,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #47A992;
+  color: #7A3E3E;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #47A992;
+  background-color: #7A3E3E;
 }
 
 /*--------------------------------------------------------------
