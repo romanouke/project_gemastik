@@ -4,7 +4,7 @@
 <p>
     1. buka cmd dari project ini <br>
     2. composer install <br>
-    3. cp .env.example .env <br>
+    3. copy .env.example .env <br>
     4. php artisan key:generate <br>
     5. project sudah siap <br>
 </p>
