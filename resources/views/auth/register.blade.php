@@ -59,9 +59,6 @@
             <div class="field">
                <input type="submit" name="submit" class="input-submit" value="Registerasi">
             </div>
-            <div class="signup-link">
-               Sudah punya akun? <a href="{{ route('login') }}">Masuk</a>
-            </div>
          </form>
       </div>
    </div>
