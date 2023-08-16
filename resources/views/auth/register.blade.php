@@ -57,7 +57,7 @@
                </div>
             </div>
             <div class="field">
-               <input type="submit" name="submit" class="input-submit" value="Registerasi">
+               <input type="submit" name="submit" class="input-submit" value="Daftar">
             </div>
             <div class="signup-link">
                Sudah punya akun? <a href="{{ route('login') }}">Masuk</a>
