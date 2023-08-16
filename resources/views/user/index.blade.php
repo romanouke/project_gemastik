@@ -109,11 +109,9 @@
                             <th class="text-dark text">Tanggal</th>
                             <th class="text-dark text">Waktu Mulai</th>
                             <th class="text-dark text">Waktu Selesai</th>
-                            <th class="text-dark text">Metode Pembayaran</th>
                             <th class="text-dark text">Harga/Menit</th>
                             <th class="text-dark text">Harga</th>
                             <th class="text-dark text">Status</th>
-                            <th class="text-dark text">Denda</th>
                         </tr>
                     </thead>
                 </table>
